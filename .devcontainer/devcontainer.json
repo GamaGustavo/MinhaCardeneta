@@ -1,0 +1,25 @@
+{
+	"name": "Java",
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/ant-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "8",
+			"jdkDistro": "ms"
+		}
+	},// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "echo \"This file was added by the postCreateCommand.\" > TEMP.md",
+  
+	// Configure tool-specific properties.
+	"customizations": {
+	  // Configure properties specific to VS Code.
+	  "vscode": {
+		// Add the IDs of extensions you want installed when the container is created.
+		"extensions": [
+		  "streetsidesoftware.code-spell-checker",
+		  "vscjava.vscode-java-pack"
+		]
+	  }
+	}
+
+}
